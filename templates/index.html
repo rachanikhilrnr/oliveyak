@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>complaint form </title>
+    <style>
+        #ending{
+        border-style:dotted;border-width:2px
+        }
+    </style>
+</head>
+<body style="background-color:#b4e8f1"><center> 
+
+<table border="1" height="300" width="700">
+<tbody><tr><td align="center" valign="top">
+<font face="verdana"><h1 id="header">STUDENTS COMPLAINT FORM</h1></font>
+
+<form action="/" method="post">
+  {% csrf_token %}
+  <label for="fname"><font size="4">FIRST NAME :</font></label>
+  <input type="text" id="fname" name="fname" value=" "><br><br>
+  <label for="lname">LAST NAME:</label>
+  <input type="text" id="lname" name="lname" value=" "><br><br>
+  <label for="rno">ROLL NO :</label>
+  <input type="text" id="rno" name="rno" value=" "><br><br>
+  <label>DEPARTMENT:</label>
+  <select id="department" name="department">
+  <option value="CSE">CSE</option>
+  <option value="IT">IT</option>
+  <option value="ECE">ECE</option>
+  <option value="EEE">EEE</option>
+  <option value="CSIT">CSIT</option>
+  <option value="CYBER">CYBER</option>
+  <option value="AERO">AERO</option>
+  <option value="CSE(AIML)">CSE(AIML)</option>
+  <option value="DATA SCIENCE">DATA SCIENCE</option>
+  <option value="CIVIL">CIVIL</option>
+  <option value="MECH">MECH</option>
+  <option value="CHEMICAL">CHEMICAL</option>
+  </select><br><br>
+  <label for="problem">MENTION WHERE ARE YOU FACING THE PRONLEM:</label>
+  <select id="problem" name="problem">
+  <option value="class room">Class room</option>
+  <option value="Lab">Lab</option>
+  <option value="Bathroom">Bathroom</option>
+  <option value="Drinking water">Drinking water</option>
+  <option value="college transport">college transport</option>
+  <option value="Canteen food">Canteen food</option>
+  <option value="Playing accubments">Playing accubments</option>
+  <option value="vehical issu">vehical issu</option>
+  <option value="payment ">Payment</option>
+  <option value="Ragging">Ragging</option>
+  <option value="Examination">Examination</option>
+  </select><br><br>
+  DISCRIPTION:<textarea rows="1" cols="50" id="des" name="des"></textarea><br><br>
+  <input type="submit" name="a" value="submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="reset" name="b" value="reset"><br><br>
+</form></td></tr></tbody></table>
+<br>
+<br><br>
+<marquee bgcolor="silver" scrollamount="6" width="100%"><font>PLATFORM WHERE YOU CAN SHARE YOUR ISSUE WITHOUT ANY ISSUE 
+</font></marquee>
+
+</center></body></html>
